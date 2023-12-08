@@ -1,4 +1,12 @@
-<div> <nav class="mobile-menu">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div> <nav class="mobile-menu">
     <input type="checkbox" id="menucheckbox" class="mobile-menu__checkbox">
     <label for="menucheckbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
     <div class="mobile-menu__container">
@@ -17,6 +25,9 @@
 </nav>
 <style type="text/css">
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+  body{
+    background-color: black;
+  }
   .mobile-menu {
   box-sizing: border-box;
   position: fixed;
@@ -49,7 +60,7 @@
 .mobile-menu__icon {
   display: block;
   position: relative;
-  background: #2D2D2D; /*цвет центральной палки*/
+  background: #ffffff; /*цвет центральной палки*/
   width: 40px; /*длина центральной палки*/
   height: 2px; /*ширина центральной палки*/
   transition: .4s;
@@ -59,7 +70,7 @@
   content: "";
   display: block;
   position: absolute;
-  background: #2D2D2D; /*цвет верхней и нижней палок*/
+  background: #ffffff; /*цвет верхней и нижней палок*/
   width: 40px; /*длина верхней и нижней палок*/
   height: 2px; /*ширина верхней и нижней палок*/
   transition: .4s;
@@ -85,7 +96,7 @@
   opacity: 1;
   transition: .8s; /*скорость открытия меню*/
   overflow: hidden; 
-   background: #F2EDE9; /*цвет фона меню*/
+   background: #fdfd05; /*цвет фона меню*/
 }
 .mobile-menu__list {
   transition: .5s;
@@ -141,3 +152,5 @@ for(var i = 0, menucount = menulinks.length; i < menucount; i++) {
  } 
 }
 } catch (e) { console.log('ERROR:', e); }</script></div>
+</body>
+</html>
